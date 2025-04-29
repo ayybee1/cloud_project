@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cloud Computing Project - Azure Static Web App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0078d7, #00b4ff);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    li {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 8px 0;
+      padding: 10px 16px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    li:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Cloud Computing Project</h1>
+    <p>Deploying Static Website to Azure using VS Code Azure Static Web Apps Extension</p>
+
+    <h3>Team Members</h3>
+    <ul id="members-list">
+      <!-- Members will be inserted by JavaScript -->
+    </ul>
+
+    <div class="footer">Department of Software Engineering, 2025</div>
+  </div>
+
+  <script>
+    const members = [
+      { name: "Abdulah Jamil", reg: "B22F1436SE005" },
+      { name: "Ehsan Nawaz", reg: "B22F1344SE064" },
+      { name: "Malik Khizar Hayat", reg: "B22F" },
+      { name: "Muhammad Yaseen", reg: "B22F" }
+    ];
+
+    const list = document.getElementById("members-list");
+
+    members.forEach(member => {
+      const li = document.createElement("li");
+      li.textContent = `${member.name} (${member.reg})`;
+      list.appendChild(li);
+    });
+  </script>
+
+</body>
+</html>
