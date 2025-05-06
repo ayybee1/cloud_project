@@ -59,9 +59,40 @@
       font-size: 14px;
       opacity: 0.8;
     }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #007bff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </div>
 
   <div class="container">
     <h1>Cloud Computing Project</h1>
@@ -77,10 +108,9 @@
 
   <script>
     const members = [
-      { name: "Abdulah Jamil", reg: "B22F1436SE005" },
-      { name: "Ehsan Nawaz", reg: "B22F1344SE064" },
-      { name: "Malik Khizar Hayat", reg: "B22F" },
-      { name: "Muhammad Yaseen", reg: "B22F" }
+      { name: "Abdullah Jamil", reg: "B22F1436SE005" },
+      { name: "Malik Khizar Hayat", reg: "B22F0635SE071" },
+      { name: "Muhammad Yaseen", reg: "B22F1306SE026" }
     ];
 
     const list = document.getElementById("members-list");
